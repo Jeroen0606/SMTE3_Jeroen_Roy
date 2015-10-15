@@ -17,7 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Shake me" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1f-tV-GcE">
-                                <rect key="frame" x="258" y="112" width="84" height="33"/>
+                                <rect key="frame" x="258" y="20" width="84" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Shake after Sleep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4j8-vg-dAs">
+                                <rect key="frame" x="274" y="291" width="53" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -25,11 +31,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="4j8-vg-dAs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="119-x6-De3"/>
+                            <constraint firstItem="4j8-vg-dAs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PPA-h0-ioX"/>
                             <constraint firstItem="a1f-tV-GcE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ubi-am-Ceq"/>
+                            <constraint firstItem="4j8-vg-dAs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="c4F-rC-8L2"/>
+                            <constraint firstItem="4j8-vg-dAs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hpH-7M-E00"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="shakeLabel" destination="a1f-tV-GcE" id="FEo-Lg-GAS"/>
+                        <outlet property="shakeLabel2" destination="4j8-vg-dAs" id="q1m-JC-qu6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

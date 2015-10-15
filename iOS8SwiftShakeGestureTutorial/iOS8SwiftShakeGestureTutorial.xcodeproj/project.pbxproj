@@ -96,6 +96,11 @@
 					F5939FFB1BCFBCE900E4E871 = {
 						CreatedOnToolsVersion = 7.0.1;
 						DevelopmentTeam = MN5SCF722P;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -290,6 +295,7 @@
 				F593A0101BCFBCE900E4E871 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
