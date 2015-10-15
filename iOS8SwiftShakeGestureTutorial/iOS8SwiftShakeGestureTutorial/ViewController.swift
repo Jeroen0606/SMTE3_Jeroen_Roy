@@ -1,0 +1,37 @@
+//
+//  ViewController.swift
+//  iOS8SwiftShakeGestureTutorial
+//
+//  Created by Fhict on 15/10/15.
+//  Copyright © 2015 Roy Timmers. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    @IBOutlet weak var shakeLabel: UILabel!
+    
+    override func canBecomeFirstResponder() -> Bool {
+        return true
+    }
+    
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        if motion == .MotionShake{
+            self.shakeLabel.text="Shaken, not stirred"
+        }
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+
+}
+
