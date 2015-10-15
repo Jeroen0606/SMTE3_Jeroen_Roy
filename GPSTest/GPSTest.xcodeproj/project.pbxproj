@@ -156,6 +156,8 @@
 		F5B428141BCF974400F11464 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Fhict;
 				TargetAttributes = {
@@ -409,6 +411,7 @@
 				F5B4283D1BCF974400F11464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5B4283E1BCF974400F11464 /* Build configuration list for PBXNativeTarget "GPSTestTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +420,7 @@
 				F5B428401BCF974400F11464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
