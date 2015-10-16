@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F533EC7F1BD1183A0093D489 /* TableViewControllerHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F533EC7E1BD1183A0093D489 /* TableViewControllerHistory.swift */; settings = {ASSET_TAGS = (); }; };
 		F5C744561BD111A3009D5F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C744551BD111A3009D5F75 /* AppDelegate.swift */; };
 		F5C744581BD111A3009D5F75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C744571BD111A3009D5F75 /* ViewController.swift */; };
 		F5C7445B1BD111A3009D5F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C744591BD111A3009D5F75 /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		F5C744601BD111A3009D5F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C7445E1BD111A3009D5F75 /* LaunchScreen.storyboard */; };
 		F5C7446B1BD111A3009D5F75 /* WeSafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C7446A1BD111A3009D5F75 /* WeSafeTests.swift */; };
 		F5C744761BD111A3009D5F75 /* WeSafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C744751BD111A3009D5F75 /* WeSafeUITests.swift */; };
+		F5C744851BD11233009D5F75 /* Alerts.gif in Resources */ = {isa = PBXBuildFile; fileRef = F5C744841BD11233009D5F75 /* Alerts.gif */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F533EC7E1BD1183A0093D489 /* TableViewControllerHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerHistory.swift; sourceTree = "<group>"; };
 		F5C744521BD111A3009D5F75 /* WeSafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeSafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C744551BD111A3009D5F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5C744571BD111A3009D5F75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		F5C744711BD111A3009D5F75 /* WeSafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeSafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C744751BD111A3009D5F75 /* WeSafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSafeUITests.swift; sourceTree = "<group>"; };
 		F5C744771BD111A3009D5F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5C744841BD11233009D5F75 /* Alerts.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Alerts.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		F5C744491BD111A3009D5F75 = {
 			isa = PBXGroup;
 			children = (
+				F5C744831BD11219009D5F75 /* Images */,
 				F5C744541BD111A3009D5F75 /* WeSafe */,
 				F5C744691BD111A3009D5F75 /* WeSafeTests */,
 				F5C744741BD111A3009D5F75 /* WeSafeUITests */,
@@ -103,6 +108,7 @@
 				F5C7445C1BD111A3009D5F75 /* Assets.xcassets */,
 				F5C7445E1BD111A3009D5F75 /* LaunchScreen.storyboard */,
 				F5C744611BD111A3009D5F75 /* Info.plist */,
+				F533EC7E1BD1183A0093D489 /* TableViewControllerHistory.swift */,
 			);
 			path = WeSafe;
 			sourceTree = "<group>";
@@ -123,6 +129,14 @@
 				F5C744771BD111A3009D5F75 /* Info.plist */,
 			);
 			path = WeSafeUITests;
+			sourceTree = "<group>";
+		};
+		F5C744831BD11219009D5F75 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F5C744841BD11233009D5F75 /* Alerts.gif */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5C744601BD111A3009D5F75 /* LaunchScreen.storyboard in Resources */,
+				F5C744851BD11233009D5F75 /* Alerts.gif in Resources */,
 				F5C7445D1BD111A3009D5F75 /* Assets.xcassets in Resources */,
 				F5C7445B1BD111A3009D5F75 /* Main.storyboard in Resources */,
 			);
@@ -255,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F533EC7F1BD1183A0093D489 /* TableViewControllerHistory.swift in Sources */,
 				F5C744581BD111A3009D5F75 /* ViewController.swift in Sources */,
 				F5C744561BD111A3009D5F75 /* AppDelegate.swift in Sources */,
 			);
@@ -481,6 +497,7 @@
 				F5C7447C1BD111A3009D5F75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5C7447D1BD111A3009D5F75 /* Build configuration list for PBXNativeTarget "WeSafeTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +506,7 @@
 				F5C7447F1BD111A3009D5F75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5C744801BD111A3009D5F75 /* Build configuration list for PBXNativeTarget "WeSafeUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +515,7 @@
 				F5C744821BD111A3009D5F75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
