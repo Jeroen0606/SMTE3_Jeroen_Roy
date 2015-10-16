@@ -23,6 +23,7 @@ class ViewController: UIViewController {
             self.shakeLabel.text="Shaken, not stirred"
             self.shakeLabel2.text="Shaking"
             var timer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "resetLabel", userInfo: nil, repeats: false)
+        
         }
     }
     
