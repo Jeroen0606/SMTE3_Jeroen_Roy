@@ -11,6 +11,7 @@ import CoreLocation
 
 class ViewController: UIViewController,CLLocationManagerDelegate{
 
+    var count :Int = 0
     let locationManager = CLLocationManager()
     override func viewDidLoad() {
         
@@ -29,6 +30,7 @@ class ViewController: UIViewController,CLLocationManagerDelegate{
     }
     
     @IBOutlet weak var lblLocation: UILabel!
+    @IBOutlet weak var lblPostcode: UILabel!
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -55,20 +57,14 @@ class ViewController: UIViewController,CLLocationManagerDelegate{
                 let pm = placemarks?[0] as CLPlacemark?
                 if(pm != nil)
                 {
-                    print(pm?.locality)
                     self.lblLocation.text = pm?.locality
+                    self.lblPostcode.text = pm?.postalCode
+                    print(self.count++)
+                    print(pm?.locality)
+                    print(pm?.postalCode)
                 }
             }
         })
-    }
-    
-    
-    func displayLocationInfo(placemark : CLPlacemark) {
-        //self.locationManager.stopUpdatingLocation()
-        print(placemark.locality)
-        print(placemark.postalCode)
-        print(placemark.administrativeArea)
-        print(placemark.country)
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
