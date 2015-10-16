@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Settings-->
         <scene sceneID="jNs-8L-dC1">
             <objects>
-                <viewController id="GeR-bm-nRo" sceneMemberID="viewController">
+                <viewController id="GeR-bm-nRo" customClass="ViewControllerSettings" customModule="WeSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fLP-d8-GCN"/>
                         <viewControllerLayoutGuide type="bottom" id="4Ci-s6-Pze"/>
@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="uZD-3L-GsM"/>
+                    <tabBarItem key="tabBarItem" title="Settings" id="uZD-3L-GsM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTL-1o-0jY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="1786"/>
+            <point key="canvasLocation" x="276" y="1584"/>
         </scene>
         <!--Alert-->
         <scene sceneID="mQg-2d-w2c">
             <objects>
-                <viewController title="Alert" id="ayY-P8-oCx" sceneMemberID="viewController">
+                <viewController title="Alert" id="ayY-P8-oCx" customClass="ViewControllerAlert" customModule="WeSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0WZ-XC-84v"/>
                         <viewControllerLayoutGuide type="bottom" id="AVX-QU-bub"/>
@@ -44,6 +44,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="49" y="109" width="326" height="319"/>
                                 </variation>
+                                <connections>
+                                    <action selector="btnAlert:" destination="ayY-P8-oCx" eventType="touchUpInside" id="UwJ-w6-6lj"/>
+                                </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzU-my-c8w">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -51,22 +54,36 @@
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
                                 </variation>
                             </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3c-Jf-erz">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="65" y="492" width="262" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Rgj-mA-Nid"/>
                                 <exclude reference="gzU-my-c8w"/>
+                                <exclude reference="V3c-Jf-erz"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Rgj-mA-Nid"/>
                                 <include reference="gzU-my-c8w"/>
+                                <include reference="V3c-Jf-erz"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="C9E-iX-JQG"/>
+                    <tabBarItem key="tabBarItem" title="Alert" id="C9E-iX-JQG"/>
+                    <connections>
+                        <outlet property="lblAlert" destination="V3c-Jf-erz" id="bPC-NM-nqH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V74-Vc-2dH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -96,11 +113,11 @@
         <scene sceneID="mTz-eW-gtH">
             <objects>
                 <tableViewController id="o3O-FN-sgg" customClass="TableViewControllerHistory" customModule="WeSafe" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="336" sectionHeaderHeight="28" sectionFooterHeight="28" id="BsF-cS-kmh">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="91" sectionHeaderHeight="28" sectionFooterHeight="28" id="BsF-cS-kmh">
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="336" id="686-7T-sLD">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="91" id="686-7T-sLD">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="686-7T-sLD" id="cJx-th-QRa">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -127,7 +144,7 @@
         <!--Emergency-->
         <scene sceneID="8ad-Pj-MXW">
             <objects>
-                <viewController id="OQN-no-NmY" sceneMemberID="viewController">
+                <viewController id="OQN-no-NmY" customClass="ViewControllerAddEmergency" customModule="WeSafe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dWA-Ky-UcT"/>
                         <viewControllerLayoutGuide type="bottom" id="TQ2-zE-03x"/>

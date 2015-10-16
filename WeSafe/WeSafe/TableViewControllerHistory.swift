@@ -9,15 +9,23 @@
 import UIKit
 
 class TableViewControllerHistory: UITableViewController {
+    
+    var history = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        history.append("Emergency 1")
+        history.append("Emergency 2")
+        history.append("Emergency 3")
+        history.append("Emergency 4")
+        history.append("Emergency 5")
+        history.append("Emergency 6")
+        history.append("Emergency 7")
+        history.append("Emergency 8")
+        history.append("Emergency 9")
+        history.append("Emergency 10")
+        history.append("Emergency 11")
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,23 +37,26 @@ class TableViewControllerHistory: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return history.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
 
-        // Configure the cell...
-
+        let currentRow = indexPath.row
+        
+        let currentEmergency = self.history[currentRow]
+        
+        cell.textLabel?.text = currentEmergency
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
