@@ -22,16 +22,21 @@ class ViewControllerAlert: UIViewController, CLLocationManagerDelegate {
             self.locationManager.delegate = self
             self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
             self.locationManager.startUpdatingLocation()
+            
         }
-        
         // Do any additional setup after loading the view.
     }
     
     @IBOutlet weak var lblAlert: UILabel!
     @IBAction func btnAlert(sender: UIButton) {
-        lblAlert.text = "Alert Pressed!"
+        lblAlert.text = "Alert Activated!"
     }
-
+    override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        if motion == .MotionShake{
+            lblAlert.text = "Alert Activated!"
+            
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

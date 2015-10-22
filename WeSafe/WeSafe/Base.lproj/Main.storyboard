@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OHY-ts-Qcd">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Settings-->
@@ -35,19 +36,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgj-mA-Nid">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                </accessibility>
-                                <state key="normal" title="Button" image="Alerts.gif"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="49" y="109" width="326" height="319"/>
-                                </variation>
-                                <connections>
-                                    <action selector="btnAlert:" destination="ayY-P8-oCx" eventType="touchUpInside" id="UwJ-w6-6lj"/>
-                                </connections>
-                            </button>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gzU-my-c8w">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -63,20 +51,45 @@
                                     <rect key="frame" x="65" y="492" width="262" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgj-mA-Nid">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <state key="normal" title="Button" image="Alerts.gif"/>
+                                <connections>
+                                    <action selector="btnAlert:" destination="ayY-P8-oCx" eventType="touchUpInside" id="UwJ-w6-6lj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rgj-mA-Nid" firstAttribute="centerY" secondItem="Hzm-6u-YWz" secondAttribute="centerY" id="CGe-qC-o9Z"/>
+                            <constraint firstItem="Rgj-mA-Nid" firstAttribute="width" secondItem="Hzm-6u-YWz" secondAttribute="height" multiplier="326:551" id="LPS-RA-o0g"/>
+                            <constraint firstItem="Rgj-mA-Nid" firstAttribute="centerX" secondItem="Hzm-6u-YWz" secondAttribute="centerX" id="Wcz-Q8-MFE"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Rgj-mA-Nid"/>
                                 <exclude reference="gzU-my-c8w"/>
                                 <exclude reference="V3c-Jf-erz"/>
+                                <exclude reference="Rgj-mA-Nid"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="CGe-qC-o9Z"/>
+                                <exclude reference="LPS-RA-o0g"/>
+                                <exclude reference="Wcz-Q8-MFE"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Rgj-mA-Nid"/>
                                 <include reference="gzU-my-c8w"/>
                                 <include reference="V3c-Jf-erz"/>
+                                <include reference="Rgj-mA-Nid"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="CGe-qC-o9Z"/>
+                                <include reference="LPS-RA-o0g"/>
+                                <include reference="Wcz-Q8-MFE"/>
                             </mask>
                         </variation>
                     </view>
