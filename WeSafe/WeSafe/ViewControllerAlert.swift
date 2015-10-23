@@ -22,6 +22,7 @@ class ViewControllerAlert: UIViewController, CLLocationManagerDelegate {
             self.locationManager.delegate = self
             self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
             self.locationManager.startUpdatingLocation()
+            PersonInfo.sharedInsance.notify()
             
         }
         // Do any additional setup after loading the view.
