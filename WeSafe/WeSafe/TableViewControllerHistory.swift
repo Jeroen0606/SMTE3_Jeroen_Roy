@@ -1,31 +1,24 @@
 //
-//  TableViewControllerHistory.swift
-//  WeSafe
+//  TableViewControllerJson.swift
+//  JSONTest
 //
-//  Created by Fhict on 16/10/15.
+//  Created by Fhict on 22/10/15.
 //  Copyright © 2015 Fhict. All rights reserved.
 //
 
 import UIKit
 
 class TableViewControllerHistory: UITableViewController {
+    var emergencies = [Emergency]();
     
-    var history = [String]()
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        history.append("Emergency 1")
-        history.append("Emergency 2")
-        history.append("Emergency 3")
-        history.append("Emergency 4")
-        history.append("Emergency 5")
-        history.append("Emergency 6")
-        history.append("Emergency 7")
-        history.append("Emergency 8")
-        history.append("Emergency 9")
-        history.append("Emergency 10")
-        history.append("Emergency 11")
+        self.loadJsonData()
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -42,21 +35,77 @@ class TableViewControllerHistory: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return history.count
+        return emergencies.count
     }
-
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
-
-        let currentRow = indexPath.row
+        let currentRow = indexPath.row;
         
-        let currentEmergency = self.history[currentRow]
+        let currentEmergency = self.emergencies[currentRow]
+        cell.textLabel?.text = currentEmergency.Date + ": " + currentEmergency.Titel
         
-        cell.textLabel?.text = currentEmergency
-        return cell
+        
+        return cell;
     }
     
+//    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        let selectedRow = self.tableView.indexPathForSelectedRow
+//        let selectedEmergency = self.emergencies[selectedRow!.section]
+//        
+//        let controller = segue.destinationViewController as! DetailsViewController
+//        controller.selectedEmergency = selectedEmergency;
+//        
+//    }
+
+    
+    func loadJsonData() {
+        let url = NSURL(string: "http://athena.fhict.nl/users/i272062/JSON/emergencies.json")
+        let request = NSURLRequest(URL: url!)
+        let session = NSURLSession.sharedSession()
+        var parseError:NSError?
+        let dataTask = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
+            do {
+                let jsonObject: AnyObject = try NSJSONSerialization.JSONObjectWithData(data!,options: NSJSONReadingOptions.AllowFragments)
+                self.parseJsonData(jsonObject)
+            } catch let error as NSError {
+                parseError = error
+            } catch {
+                fatalError()
+            }
+        })
+        dataTask.resume();
+    }
+    
+    func parseJsonData(jsonObject:AnyObject)
+    {
+        if let jsonData = jsonObject as? NSArray
+        {
+            for item in jsonData
+            {
+                let newEmergency = Emergency(
+                    titel: item.objectForKey("titel") as! String,
+                    date: item.objectForKey("date") as! String,
+                    description: item.objectForKey("description") as! String
+                )
+                emergencies.append(newEmergency)
+            }
+        }
+        self.tableView.reloadData()
+    }
+    
+    
+
+
+    /*
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+
+        // Configure the cell...
+
+        return cell
+    }
+    */
 
     /*
     // Override to support conditional editing of the table view.
