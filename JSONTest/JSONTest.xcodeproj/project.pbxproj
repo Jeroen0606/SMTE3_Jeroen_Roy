@@ -13,7 +13,7 @@
 		F533ECA81BD8DD170093D489 /* JSONTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F533ECA71BD8DD170093D489 /* JSONTestTests.swift */; };
 		F533ECB31BD8DD170093D489 /* JSONTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F533ECB21BD8DD170093D489 /* JSONTestUITests.swift */; };
 		F533ECC31BD8DDA80093D489 /* TableViewControllerJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F533ECC21BD8DDA80093D489 /* TableViewControllerJson.swift */; settings = {ASSET_TAGS = (); }; };
-		F533ECC51BD8DEE00093D489 /* Pirate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F533ECC41BD8DEE00093D489 /* Pirate.swift */; settings = {ASSET_TAGS = (); }; };
+		F533ECC51BD8DEE00093D489 /* Emergency.swift in Sources */ = {isa = PBXBuildFile; fileRef = F533ECC41BD8DEE00093D489 /* Emergency.swift */; settings = {ASSET_TAGS = (); }; };
 		F533ECC71BD8F3880093D489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F533ECC61BD8F3880093D489 /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
 		F533ECC91BD8F3F00093D489 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F533ECC81BD8F3F00093D489 /* DetailsViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -48,7 +48,7 @@
 		F533ECB21BD8DD170093D489 /* JSONTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTestUITests.swift; sourceTree = "<group>"; };
 		F533ECB41BD8DD170093D489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F533ECC21BD8DDA80093D489 /* TableViewControllerJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerJson.swift; sourceTree = "<group>"; };
-		F533ECC41BD8DEE00093D489 /* Pirate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pirate.swift; sourceTree = "<group>"; };
+		F533ECC41BD8DEE00093D489 /* Emergency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emergency.swift; sourceTree = "<group>"; };
 		F533ECC61BD8F3880093D489 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F533ECC81BD8F3F00093D489 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,7 +104,7 @@
 				F533ECC61BD8F3880093D489 /* Main.storyboard */,
 				F533EC921BD8DD170093D489 /* AppDelegate.swift */,
 				F533EC991BD8DD170093D489 /* Assets.xcassets */,
-				F533ECC41BD8DEE00093D489 /* Pirate.swift */,
+				F533ECC41BD8DEE00093D489 /* Emergency.swift */,
 				F533EC9B1BD8DD170093D489 /* LaunchScreen.storyboard */,
 				F533EC9E1BD8DD170093D489 /* Info.plist */,
 				F533ECC81BD8F3F00093D489 /* DetailsViewController.swift */,
@@ -261,7 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F533ECC51BD8DEE00093D489 /* Pirate.swift in Sources */,
+				F533ECC51BD8DEE00093D489 /* Emergency.swift in Sources */,
 				F533ECC31BD8DDA80093D489 /* TableViewControllerJson.swift in Sources */,
 				F533EC931BD8DD170093D489 /* AppDelegate.swift in Sources */,
 				F533ECC91BD8F3F00093D489 /* DetailsViewController.swift in Sources */,
@@ -481,6 +481,7 @@
 				F533ECB91BD8DD170093D489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F533ECBA1BD8DD170093D489 /* Build configuration list for PBXNativeTarget "JSONTestTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +490,7 @@
 				F533ECBC1BD8DD170093D489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F533ECBD1BD8DD170093D489 /* Build configuration list for PBXNativeTarget "JSONTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +499,7 @@
 				F533ECBF1BD8DD170093D489 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

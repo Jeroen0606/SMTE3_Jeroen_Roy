@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailsViewController: UIViewController {
-    var selectedPirate: Pirate?
+    var selectedEmergency: Emergency?
     
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblLife: UILabel!
@@ -21,11 +21,9 @@ class DetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.lblName.text = self.selectedPirate?.Name
-        self.lblLife.text = self.selectedPirate?.Life
-        self.lblActiveYears.text = self.selectedPirate?.YearsActive
-        self.lblCountryOfBirth.text = self.selectedPirate?.CountryOfOrigin
-        self.tfComments.text = self.selectedPirate?.Comments
+        self.lblName.text = self.selectedEmergency?.Titel
+        self.lblLife.text = self.selectedEmergency?.Date
+        self.tfComments.text = self.selectedEmergency?.Description
     }
 
     override func didReceiveMemoryWarning() {

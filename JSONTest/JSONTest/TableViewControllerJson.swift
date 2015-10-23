@@ -9,7 +9,7 @@
 import UIKit
 
 class TableViewControllerJson: UITableViewController {
-    var pirates = [Pirate]();
+    var emergencies = [Emergency]();
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,30 +35,30 @@ class TableViewControllerJson: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return pirates.count
+        return emergencies.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath)
         let currentRow = indexPath.row;
         
-        let currentPirate = self.pirates[currentRow]
-        cell.textLabel?.text = currentPirate.Name
+        let currentEmergency = self.emergencies[currentRow]
+        cell.textLabel?.text = currentEmergency.Titel + " : " + currentEmergency.Date
         return cell;
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let selectedRow = self.tableView.indexPathForSelectedRow
-        let selectedPirate = self.pirates[selectedRow!.section]
+        let selectedEmergency = self.emergencies[selectedRow!.section]
         
         let controller = segue.destinationViewController as! DetailsViewController
-        controller.selectedPirate = selectedPirate;
+        controller.selectedEmergency = selectedEmergency;
         
     }
 
     
     func loadJsonData() {
-        let url = NSURL(string: "http://athena.fhict.nl/users/i886625/pirates.json")
+        let url = NSURL(string: "http://athena.fhict.nl/users/i272062/JSON/emergencies.json")
         let request = NSURLRequest(URL: url!)
         let session = NSURLSession.sharedSession()
         var parseError:NSError?
@@ -81,19 +81,18 @@ class TableViewControllerJson: UITableViewController {
         {
             for item in jsonData
             {
-                let newPirate = Pirate(
-                    name: item.objectForKey("name") as! String,
-                    life: item.objectForKey("life") as! String,
-                    yearsActive: item.objectForKey("years_active") as! String,
-                    countryOfOrigin: item.objectForKey("country_of_origin") as! String,
-                    comments: item.objectForKey("comments") as! String
+                let newEmergency = Emergency(
+                    titel: item.objectForKey("titel") as! String,
+                    date: item.objectForKey("date") as! String,
+                    description: item.objectForKey("description") as! String
                 )
-                pirates.append(newPirate)
-                print(newPirate.Name)
+                emergencies.append(newEmergency)
             }
         }
         self.tableView.reloadData()
     }
+    
+    
 
 
     /*
