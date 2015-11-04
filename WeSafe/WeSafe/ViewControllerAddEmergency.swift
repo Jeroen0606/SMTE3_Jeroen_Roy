@@ -9,7 +9,12 @@
 import UIKit
 
 class ViewControllerAddEmergency: UIViewController {
+    var emergency:Emergency?
 
+    @IBOutlet weak var tfTitle: UITextField!
+    @IBOutlet weak var dpDate: UIDatePicker!
+    @IBOutlet weak var tfDescription: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -20,6 +25,17 @@ class ViewControllerAddEmergency: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func btnAdd(sender: AnyObject) {
+        emergency = Emergency(titel: tfTitle.text, date: dpDate.description, description: tfDescription.text!)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let controller = segue.destinationViewController as! TableViewControllerHistory
+        controller.emergencies.append(emergency!);
+        
+    }
+
 
     /*
     // MARK: - Navigation
