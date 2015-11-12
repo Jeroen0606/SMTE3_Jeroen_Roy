@@ -13,6 +13,8 @@ class ViewControllerAlert: UIViewController, CLLocationManagerDelegate {
 
     let locationManager = CLLocationManager()
     var count:Int = 0
+    var locality : String?
+    var postcode : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,9 +33,10 @@ class ViewControllerAlert: UIViewController, CLLocationManagerDelegate {
         // Do any additional setup after loading the view.
     }
     
+    @IBOutlet weak var lblLocation: UILabel!
     @IBOutlet weak var lblAlert: UILabel!
     @IBAction func btnAlert(sender: UIButton) {
-        lblAlert.text = "Alert Activated!"
+        lblLocation.text = locality! + " - " + postcode!
     }
     override func motionEnded(motion: UIEventSubtype, withEvent event: UIEvent?) {
         if motion == .MotionShake{
@@ -67,9 +70,9 @@ class ViewControllerAlert: UIViewController, CLLocationManagerDelegate {
                 let pm = placemarks?[0] as CLPlacemark?
                 if(pm != nil)
                 {
-                    print(pm?.locality)
-                    print(pm?.postalCode)
-                    print(self.count++)
+                    self.locality = pm?.locality
+                    self.postcode = pm?.postalCode
+                    //print(self.count++)
                 }
             }
         })

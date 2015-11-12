@@ -57,13 +57,19 @@
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
                                 <state key="normal" title="Button" image="Alerts.gif"/>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="37" y="76" width="326" height="450"/>
-                                </variation>
                                 <connections>
                                     <action selector="btnAlert:" destination="ayY-P8-oCx" eventType="touchUpInside" id="UwJ-w6-6lj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8AK-B9-yht">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="37" y="551" width="343" height="32"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -76,6 +82,7 @@
                                 <exclude reference="gzU-my-c8w"/>
                                 <exclude reference="V3c-Jf-erz"/>
                                 <exclude reference="Rgj-mA-Nid"/>
+                                <exclude reference="8AK-B9-yht"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="CGe-qC-o9Z"/>
@@ -88,6 +95,7 @@
                                 <include reference="gzU-my-c8w"/>
                                 <include reference="V3c-Jf-erz"/>
                                 <include reference="Rgj-mA-Nid"/>
+                                <include reference="8AK-B9-yht"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="CGe-qC-o9Z"/>
@@ -99,6 +107,7 @@
                     <tabBarItem key="tabBarItem" title="Alert" id="C9E-iX-JQG"/>
                     <connections>
                         <outlet property="lblAlert" destination="V3c-Jf-erz" id="bPC-NM-nqH"/>
+                        <outlet property="lblLocation" destination="8AK-B9-yht" id="bvX-z0-gPy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V74-Vc-2dH" userLabel="First Responder" sceneMemberID="firstResponder"/>
