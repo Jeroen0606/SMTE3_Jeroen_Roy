@@ -27,6 +27,8 @@ class ViewControllerAlert: UIViewController, CLLocationManagerDelegate {
             PersonInfo.sharedInsance.notify()
             for var i = 1; i<25; ++i{
                 var date = NSDate()
+                date = date.dateByAddingTimeInterval(3600*1)
+                PersonInfo.sharedInsance.notifyDate(date)
             }
             
         }
