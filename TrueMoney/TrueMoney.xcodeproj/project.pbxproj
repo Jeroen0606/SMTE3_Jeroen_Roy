@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5C9C5C51BF4B949003990EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C9C5C41BF4B949003990EC /* AppDelegate.swift */; };
+		F5C9C5C71BF4B949003990EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C9C5C61BF4B949003990EC /* ViewController.swift */; };
+		F5C9C5CA1BF4B949003990EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C9C5C81BF4B949003990EC /* Main.storyboard */; };
+		F5C9C5CC1BF4B949003990EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5C9C5CB1BF4B949003990EC /* Assets.xcassets */; };
+		F5C9C5CF1BF4B949003990EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C9C5CD1BF4B949003990EC /* LaunchScreen.storyboard */; };
+		F5C9C5DA1BF4B949003990EC /* TrueMoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C9C5D91BF4B949003990EC /* TrueMoneyTests.swift */; };
+		F5C9C5E51BF4B949003990EC /* TrueMoneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C9C5E41BF4B949003990EC /* TrueMoneyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5C9C5D61BF4B949003990EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5C9C5B91BF4B949003990EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5C9C5C01BF4B949003990EC;
+			remoteInfo = TrueMoney;
+		};
+		F5C9C5E11BF4B949003990EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5C9C5B91BF4B949003990EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5C9C5C01BF4B949003990EC;
+			remoteInfo = TrueMoney;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5C9C5C11BF4B949003990EC /* TrueMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrueMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C9C5C41BF4B949003990EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5C9C5C61BF4B949003990EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5C9C5C91BF4B949003990EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5C9C5CB1BF4B949003990EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5C9C5CE1BF4B949003990EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5C9C5D01BF4B949003990EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5C9C5D51BF4B949003990EC /* TrueMoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrueMoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C9C5D91BF4B949003990EC /* TrueMoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueMoneyTests.swift; sourceTree = "<group>"; };
+		F5C9C5DB1BF4B949003990EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5C9C5E01BF4B949003990EC /* TrueMoneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrueMoneyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C9C5E41BF4B949003990EC /* TrueMoneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueMoneyUITests.swift; sourceTree = "<group>"; };
+		F5C9C5E61BF4B949003990EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5C9C5BE1BF4B949003990EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C9C5D21BF4B949003990EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C9C5DD1BF4B949003990EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5C9C5B81BF4B949003990EC = {
+			isa = PBXGroup;
+			children = (
+				F5C9C5C31BF4B949003990EC /* TrueMoney */,
+				F5C9C5D81BF4B949003990EC /* TrueMoneyTests */,
+				F5C9C5E31BF4B949003990EC /* TrueMoneyUITests */,
+				F5C9C5C21BF4B949003990EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5C9C5C21BF4B949003990EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5C9C5C11BF4B949003990EC /* TrueMoney.app */,
+				F5C9C5D51BF4B949003990EC /* TrueMoneyTests.xctest */,
+				F5C9C5E01BF4B949003990EC /* TrueMoneyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5C9C5C31BF4B949003990EC /* TrueMoney */ = {
+			isa = PBXGroup;
+			children = (
+				F5C9C5C41BF4B949003990EC /* AppDelegate.swift */,
+				F5C9C5C61BF4B949003990EC /* ViewController.swift */,
+				F5C9C5C81BF4B949003990EC /* Main.storyboard */,
+				F5C9C5CB1BF4B949003990EC /* Assets.xcassets */,
+				F5C9C5CD1BF4B949003990EC /* LaunchScreen.storyboard */,
+				F5C9C5D01BF4B949003990EC /* Info.plist */,
+			);
+			path = TrueMoney;
+			sourceTree = "<group>";
+		};
+		F5C9C5D81BF4B949003990EC /* TrueMoneyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5C9C5D91BF4B949003990EC /* TrueMoneyTests.swift */,
+				F5C9C5DB1BF4B949003990EC /* Info.plist */,
+			);
+			path = TrueMoneyTests;
+			sourceTree = "<group>";
+		};
+		F5C9C5E31BF4B949003990EC /* TrueMoneyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5C9C5E41BF4B949003990EC /* TrueMoneyUITests.swift */,
+				F5C9C5E61BF4B949003990EC /* Info.plist */,
+			);
+			path = TrueMoneyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5C9C5C01BF4B949003990EC /* TrueMoney */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5C9C5E91BF4B949003990EC /* Build configuration list for PBXNativeTarget "TrueMoney" */;
+			buildPhases = (
+				F5C9C5BD1BF4B949003990EC /* Sources */,
+				F5C9C5BE1BF4B949003990EC /* Frameworks */,
+				F5C9C5BF1BF4B949003990EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrueMoney;
+			productName = TrueMoney;
+			productReference = F5C9C5C11BF4B949003990EC /* TrueMoney.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5C9C5D41BF4B949003990EC /* TrueMoneyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5C9C5EC1BF4B949003990EC /* Build configuration list for PBXNativeTarget "TrueMoneyTests" */;
+			buildPhases = (
+				F5C9C5D11BF4B949003990EC /* Sources */,
+				F5C9C5D21BF4B949003990EC /* Frameworks */,
+				F5C9C5D31BF4B949003990EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5C9C5D71BF4B949003990EC /* PBXTargetDependency */,
+			);
+			name = TrueMoneyTests;
+			productName = TrueMoneyTests;
+			productReference = F5C9C5D51BF4B949003990EC /* TrueMoneyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5C9C5DF1BF4B949003990EC /* TrueMoneyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5C9C5EF1BF4B949003990EC /* Build configuration list for PBXNativeTarget "TrueMoneyUITests" */;
+			buildPhases = (
+				F5C9C5DC1BF4B949003990EC /* Sources */,
+				F5C9C5DD1BF4B949003990EC /* Frameworks */,
+				F5C9C5DE1BF4B949003990EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5C9C5E21BF4B949003990EC /* PBXTargetDependency */,
+			);
+			name = TrueMoneyUITests;
+			productName = TrueMoneyUITests;
+			productReference = F5C9C5E01BF4B949003990EC /* TrueMoneyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5C9C5B91BF4B949003990EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Fhict;
+				TargetAttributes = {
+					F5C9C5C01BF4B949003990EC = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = KF6WXG7L66;
+					};
+					F5C9C5D41BF4B949003990EC = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = MN5SCF722P;
+						TestTargetID = F5C9C5C01BF4B949003990EC;
+					};
+					F5C9C5DF1BF4B949003990EC = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = MN5SCF722P;
+						TestTargetID = F5C9C5C01BF4B949003990EC;
+					};
+				};
+			};
+			buildConfigurationList = F5C9C5BC1BF4B949003990EC /* Build configuration list for PBXProject "TrueMoney" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5C9C5B81BF4B949003990EC;
+			productRefGroup = F5C9C5C21BF4B949003990EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5C9C5C01BF4B949003990EC /* TrueMoney */,
+				F5C9C5D41BF4B949003990EC /* TrueMoneyTests */,
+				F5C9C5DF1BF4B949003990EC /* TrueMoneyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5C9C5BF1BF4B949003990EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C9C5CF1BF4B949003990EC /* LaunchScreen.storyboard in Resources */,
+				F5C9C5CC1BF4B949003990EC /* Assets.xcassets in Resources */,
+				F5C9C5CA1BF4B949003990EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C9C5D31BF4B949003990EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C9C5DE1BF4B949003990EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5C9C5BD1BF4B949003990EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C9C5C71BF4B949003990EC /* ViewController.swift in Sources */,
+				F5C9C5C51BF4B949003990EC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C9C5D11BF4B949003990EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C9C5DA1BF4B949003990EC /* TrueMoneyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C9C5DC1BF4B949003990EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C9C5E51BF4B949003990EC /* TrueMoneyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5C9C5D71BF4B949003990EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5C9C5C01BF4B949003990EC /* TrueMoney */;
+			targetProxy = F5C9C5D61BF4B949003990EC /* PBXContainerItemProxy */;
+		};
+		F5C9C5E21BF4B949003990EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5C9C5C01BF4B949003990EC /* TrueMoney */;
+			targetProxy = F5C9C5E11BF4B949003990EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5C9C5C81BF4B949003990EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5C9C5C91BF4B949003990EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5C9C5CD1BF4B949003990EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5C9C5CE1BF4B949003990EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5C9C5E71BF4B949003990EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5C9C5E81BF4B949003990EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5C9C5EA1BF4B949003990EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TrueMoney/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeroenvanThoor.TrueMoney;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		F5C9C5EB1BF4B949003990EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = TrueMoney/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeroenvanThoor.TrueMoney;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		F5C9C5ED1BF4B949003990EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrueMoneyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeroenvanThoor.TrueMoneyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrueMoney.app/TrueMoney";
+			};
+			name = Debug;
+		};
+		F5C9C5EE1BF4B949003990EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TrueMoneyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeroenvanThoor.TrueMoneyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TrueMoney.app/TrueMoney";
+			};
+			name = Release;
+		};
+		F5C9C5F01BF4B949003990EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TrueMoneyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeroenvanThoor.TrueMoneyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TrueMoney;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F5C9C5F11BF4B949003990EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TrueMoneyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JeroenvanThoor.TrueMoneyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TrueMoney;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5C9C5BC1BF4B949003990EC /* Build configuration list for PBXProject "TrueMoney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5C9C5E71BF4B949003990EC /* Debug */,
+				F5C9C5E81BF4B949003990EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5C9C5E91BF4B949003990EC /* Build configuration list for PBXNativeTarget "TrueMoney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5C9C5EA1BF4B949003990EC /* Debug */,
+				F5C9C5EB1BF4B949003990EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5C9C5EC1BF4B949003990EC /* Build configuration list for PBXNativeTarget "TrueMoneyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5C9C5ED1BF4B949003990EC /* Debug */,
+				F5C9C5EE1BF4B949003990EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5C9C5EF1BF4B949003990EC /* Build configuration list for PBXNativeTarget "TrueMoneyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5C9C5F01BF4B949003990EC /* Debug */,
+				F5C9C5F11BF4B949003990EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5C9C5B91BF4B949003990EC /* Project object */;
+}
